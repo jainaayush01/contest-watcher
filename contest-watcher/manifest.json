@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "contest-watcher",
+    "description": "",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "img.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "alarms", "notifications"],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["popup.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_security_policy": "script-src 'self' 'sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=='; object-src 'self'"
+}

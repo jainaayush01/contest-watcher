@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-2726c7f26c' 'sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==' 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==' 'unsafe-inline' 'unsafe-eval'; object-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest-Watcher</title>
+    <style>
+        body {
+            min-width: 400px;            
+            color: #F66FB1;
+
+        }
+        .contest {
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 4px;
+        }
+        a {
+            color: #F66FB1;
+        }
+        .dark {
+            background-color: #0D0C0D;
+        }
+        #btn {
+            float: right;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 0.8em;
+        }
+        .borderDark {
+            border: 1px solid black !important;
+        }
+    </style>
+</head>
+<body class="dark">
+    <h1>Contest Details <div class="" id="btn">Theme</div></h1>
+    <div id="contests"></div>
+
+    <script src="moment.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
